@@ -6,23 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>配置yilia主题 | Hexo</title>
+  <title>数据结构练习——栈 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="声明：所有的操作都是在Mac OS系统中完成的">
+  <meta name="description" content="语言：C++ IDE：Xcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="配置yilia主题">
-<meta property="og:url" content="http://example.com/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/index.html">
+<meta property="og:title" content="数据结构练习——栈">
+<meta property="og:url" content="http://example.com/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="声明：所有的操作都是在Mac OS系统中完成的">
+<meta property="og:description" content="语言：C++ IDE：Xcode">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/a.jpg">
-<meta property="og:image" content="http://example.com/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/2.png">
-<meta property="og:image" content="http://example.com/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/3.png">
-<meta property="article:published_time" content="2020-09-30T00:11:03.000Z">
-<meta property="article:modified_time" content="2020-09-30T04:25:52.000Z">
+<meta property="article:published_time" content="2020-09-30T13:05:18.000Z">
+<meta property="article:modified_time" content="2020-09-30T13:10:32.000Z">
 <meta property="article:author" content="Barry Wong">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/a.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -163,14 +159,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-配置yilia主题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-数据结构练习——栈" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      配置yilia主题
+      数据结构练习——栈
     </h1>
   
 
@@ -186,8 +182,8 @@
 	
 	<!--显示阅读次数完毕-->
         
-        <a href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-09-30T00:11:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
+        <a href="/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/" class="archive-article-date">
+  	<time datetime="2020-09-30T13:05:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
 </a>
         
       </header>
@@ -195,89 +191,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>声明：所有的操作都是在Mac OS系统中完成的</p>
+<p>语言：C++</p>
+<p>IDE：Xcode</p>
 </blockquote>
 <a id="more"></a>
 
-<h1 id="解决所有文章不能显示的问题"><a href="#解决所有文章不能显示的问题" class="headerlink" title="解决所有文章不能显示的问题"></a>解决所有文章不能显示的问题</h1><p><img src="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/a.jpg" alt="1"></p>
-<p><code>问题描述：当点击所有文章的时候，屏幕中无法显示blog中文章的目录</code></p>
-<p><code>解决方法：</code></p>
-<ol>
-<li><p>请确保node版本大于6.2，在终端用下列代码查询</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先下载国内淘宝的镜像源，这样下载较快且容易成功</p>
-<p><code>nmp install -g cnpm --registry</code></p>
-<p><code>=https://registry.npm.taobao.org</code></p>
-<p>然后进入博客的根目录（注意不是yilia根目录），执行以下命令：</p>
-<p><code>cnpm i hexo-generator-json-content --save</code></p>
-</li>
-<li><p>在根目录下打开_config.yml文件，可以用vim打开</p>
-<p><code>vim _config.yml（如果回车之后需要选择模式，选择E(dit)模式）</code></p>
-<p>进入后按<code>i</code>进入insert模式，拖到文档最后，另起一行输入：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">   meta: false</span><br><span class="line">   pages: false</span><br><span class="line">   posts:</span><br><span class="line"><span class="code">     title: true</span></span><br><span class="line"><span class="code">     date: true</span></span><br><span class="line"><span class="code">     path: true</span></span><br><span class="line"><span class="code">     text: false</span></span><br><span class="line"><span class="code">     raw: false</span></span><br><span class="line"><span class="code">     content: false</span></span><br><span class="line"><span class="code">     slug: false</span></span><br><span class="line"><span class="code">     updated: false</span></span><br><span class="line"><span class="code">     comments: false</span></span><br><span class="line"><span class="code">     link: false</span></span><br><span class="line"><span class="code">     permalink: false</span></span><br><span class="line"><span class="code">     excerpt: false</span></span><br><span class="line"><span class="code">     categories: false</span></span><br><span class="line"><span class="code">     tags: true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">BStack</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> T <span class="title">pop</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">const</span> T&amp; <span class="title">top</span><span class="params">()</span><span class="keyword">const</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">virtual</span> ~BStack()&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">traverse</span><span class="params">()</span><span class="keyword">const</span> </span>= <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">Array_Stack</span> :</span> <span class="keyword">public</span> BStack&lt;T&gt;</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    T* elem;</span><br><span class="line">    <span class="keyword">int</span> top_p;</span><br><span class="line">    <span class="keyword">int</span> MAX;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">double_stack</span><span class="params">()</span></span>;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Array_Stack(<span class="keyword">int</span> max):MAX(max)&#123;</span><br><span class="line">        elem = <span class="keyword">new</span> T[MAX];</span><br><span class="line">        top_p = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span></span>;</span><br><span class="line">    <span class="function">T <span class="title">pop</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">const</span> T&amp; <span class="title">top</span><span class="params">()</span><span class="keyword">const</span></span>;</span><br><span class="line">    ~Array_Stack();</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">traverse</span><span class="params">()</span><span class="keyword">const</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">List_Stack</span> :</span> <span class="keyword">public</span> BStack&lt;T&gt;</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">        T data;</span><br><span class="line">        Node* pNext;</span><br><span class="line">        </span><br><span class="line">        Node():pNext(<span class="literal">NULL</span>)&#123;<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Node ctor&quot;</span>&lt;&lt; <span class="built_in">endl</span>; &#125;;</span><br><span class="line">        Node(<span class="keyword">const</span> T&amp; x, Node* p):data(x),pNext(p)&#123;<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Node ctor&quot;</span> &lt;&lt; <span class="built_in">endl</span>;&#125;;</span><br><span class="line">        ~Node()&#123;<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Node dtor&quot;</span> &lt;&lt; <span class="built_in">endl</span>;&#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line">    Node* pTop;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    List_Stack()&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;List_Stack ctor&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        pTop = <span class="keyword">new</span> Node;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span></span>;</span><br><span class="line">    <span class="function">T <span class="title">pop</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">const</span> T&amp; <span class="title">top</span><span class="params">()</span><span class="keyword">const</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">traverse</span><span class="params">()</span><span class="keyword">const</span></span>;</span><br><span class="line">    ~List_Stack()&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;List_Stack dtor&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        Node* p = pTop-&gt;pNext;</span><br><span class="line">        <span class="keyword">while</span>(p != <span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            Node* temp = p;</span><br><span class="line">            p = p-&gt;pNext;</span><br><span class="line">            <span class="keyword">delete</span> temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">delete</span> pTop;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">List_Stack</span>&lt;T&gt;:</span>:push(<span class="keyword">const</span> T &amp;x)</span><br><span class="line">&#123;</span><br><span class="line">    Node* temp = <span class="keyword">new</span> Node(x, pTop-&gt;pNext);</span><br><span class="line">    pTop-&gt;pNext = temp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">T</span> <span class="title">List_Stack</span>&lt;T&gt;:</span>:pop()</span><br><span class="line">&#123;</span><br><span class="line">    Node* temp = pTop-&gt;pNext;</span><br><span class="line">    T a = temp-&gt;data;</span><br><span class="line">    pTop-&gt;pNext = temp-&gt;pNext;</span><br><span class="line">    <span class="keyword">delete</span> temp;</span><br><span class="line">    <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">const</span> <span class="title">T</span>&amp; <span class="title">List_Stack</span>&lt;T&gt;:</span>:top()<span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(pTop-&gt;pNext == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Stack is empty!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> pTop-&gt;pNext-&gt;data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">List_Stack</span>&lt;T&gt;:</span>:traverse()<span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    Node* p = pTop-&gt;pNext;</span><br><span class="line">    <span class="keyword">while</span>(p != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; p-&gt;data &lt;&lt; <span class="string">&quot;  &quot;</span>;</span><br><span class="line">        p = p-&gt;pNext;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">Array_Stack</span>&lt;T&gt;:</span>:double_stack()</span><br><span class="line">&#123;</span><br><span class="line">    MAX *= <span class="number">2</span>;</span><br><span class="line">    T* temp = <span class="keyword">new</span> T[MAX];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; MAX/<span class="number">2</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        temp[i] = elem[i];</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    T* temp1 = elem;</span><br><span class="line">    elem = temp;</span><br><span class="line">    <span class="keyword">delete</span>[] temp1;</span><br><span class="line">    temp = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">Array_Stack</span>&lt;T&gt;:</span>:push(<span class="keyword">const</span> T&amp; x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(top_p + <span class="number">1</span> == MAX)</span><br><span class="line">    &#123;</span><br><span class="line">        double_stack();</span><br><span class="line">        push(x);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    elem[++top_p] = x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">T</span> <span class="title">Array_Stack</span>&lt;T&gt;:</span>:pop()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(top_p == <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Stack is empty!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> elem[top_p--];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">const</span> <span class="title">T</span>&amp; <span class="title">Array_Stack</span>&lt;T&gt;:</span>:top()<span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(top_p == <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Stack is empty!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> elem[top_p];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">Array_Stack</span>&lt;T&gt;:</span>:~Array_Stack()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">delete</span>[] elem;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">Array_Stack</span>&lt;T&gt;:</span>:traverse()<span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(top_p == <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Stack is empty!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= top_p; ++i)</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; elem[i] &lt;&lt; <span class="string">&quot;  &quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>按<code>esc</code>，接着按<code>:wq</code>，然后回车</p>
-</li>
-<li><p>然后更新一下：</p>
-<p><code>hexo g</code></p>
-</li>
-<li><p>然后即可在本地端口看到修改后的内容：</p>
-<p><code>hexo s</code></p>
-</li>
-</ol>
-<h1 id="配置图片资源"><a href="#配置图片资源" class="headerlink" title="配置图片资源"></a>配置图片资源</h1><ol>
-<li><p>添加图片资源文件夹</p>
-<p>在<code>themes/yilia/source</code>下，添加一个<code>assets</code>文件夹，里面存放图片</p>
-</li>
-<li><p>配置文件中直接引用</p>
-<p>路径为<code>themes/yilia/_config.yml</code>，找到如下：</p>
-<img src="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/2.png" alt="2" style="zoom:50%;">
-
-<hr>
-<img src="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/3.png" alt="3" style="zoom:67%;">
-
-<p>项目前面加<code>#</code>就意味着该项目不在博客中显示，这里我留下qq，微信和邮箱</p>
-<p><code>favicon</code>是网页打开时的小图标</p>
-<p><code>avatar</code>是头像</p>
-</li>
-<li><p>生成配置</p>
-<p>转到博客的根目录，输入</p>
-<p><code>hexo g</code></p>
-</li>
-</ol>
-<h1 id="文章如何显示摘要"><a href="#文章如何显示摘要" class="headerlink" title="文章如何显示摘要"></a>文章如何显示摘要</h1><p><code>问题描述：在hexo中显示的是文章全文，页面看起来不简洁干净，所以需要显示摘要</code></p>
-<p>解决方法：在md格式文章正文插入<code>&lt;!-- more --&gt;</code>即可，页面只会显示它之前的，之后的就不会显示，点击全文阅读才可以看到。然后打开<code>themes/yilia/_config.yml</code>，执行如下操作：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># excerpt<span class="emphasis">_link: more</span></span></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="文章显示目录"><a href="#文章显示目录" class="headerlink" title="文章显示目录"></a>文章显示目录</h1><p>增加显示目录可以方便阅读文章，在<code>themes/yilia/_config.yml</code>中配置<code>toc：2</code>即可，它会将md文件的标题生成目录，放在右下角</p>
-<h1 id="增加归档菜单"><a href="#增加归档菜单" class="headerlink" title="增加归档菜单"></a>增加归档菜单</h1><p>修改 <code>themes/yilia/_config.yml</code></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line"><span class="code">    主页:  /</span></span><br><span class="line"><span class="code">    归档:  /archives/index.html</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="微信分享"><a href="#微信分享" class="headerlink" title="微信分享"></a>微信分享</h1><p>修改 <code>themes/yilia/layout/_partial/post/share.ejs</code></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x27;//pan.baidu.com/share/qrcode?url=&#x27; + sUrl</span><br><span class="line">改为</span><br><span class="line">&#x27;//api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=你的个人主页网址&#x27; + test</span><br></pre></td></tr></table></figure>
-
-<p>比如我的个人主页网址是：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://wyx-sjtu.github.io/    </span><br><span class="line">不算http://以及最后的/一共18个字符</span><br></pre></td></tr></table></figure>
-
-<p>上面就要改为：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27;//api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=http://wyx-sjtu.github.io/&#x27; + test</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>接下来在文件中的</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var sUrl = url.replace(/index\.html$/, &#x27;&#x27;);</span><br><span class="line">  sUrl = /^(http:|https:)\/\//.test(sUrl) ? sUrl : &#x27;http:&#x27; + sUrl;</span><br></pre></td></tr></table></figure>
-
-<p>下面加上一行：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">test=sUrl.substring(18);</span><br><span class="line">//18是刚刚计算的自己网址的字符数</span><br></pre></td></tr></table></figure>
-
-
-
-<p>回到根目录，重新生成一下hexo即可</p>
-<p><a target="_blank" rel="noopener" href="https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81">更全的操作</a></p>
+<blockquote>
+<p>欢迎相互交流</p>
+</blockquote>
 
       
 
@@ -357,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io//2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io//2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -372,18 +295,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Typora操作基础
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Typora操作基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -410,7 +324,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E4%B8%8D%E8%83%BD%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">解决所有文章不能显示的问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90"><span class="toc-number">2.</span> <span class="toc-text">配置图片资源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81"><span class="toc-number">3.</span> <span class="toc-text">文章如何显示摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95"><span class="toc-number">4.</span> <span class="toc-text">文章显示目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E5%BD%92%E6%A1%A3%E8%8F%9C%E5%8D%95"><span class="toc-number">5.</span> <span class="toc-text">增加归档菜单</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB"><span class="toc-number">6.</span> <span class="toc-text">微信分享</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
