@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Hexo</title>
+  <title>比较含退格的字符串 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="语言：C++ IDE：Xcode 问题来源：LeetCode 链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;backspace-string-compare">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/09/28/hello-world/index.html">
+<meta property="og:title" content="比较含退格的字符串">
+<meta property="og:url" content="http://example.com/2020/10/19/%E6%AF%94%E8%BE%83%E5%90%AB%E9%80%80%E6%A0%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="语言：C++ IDE：Xcode 问题来源：LeetCode 链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;backspace-string-compare">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-28T14:05:45.000Z">
-<meta property="article:modified_time" content="2020-09-29T14:46:47.000Z">
+<meta property="article:published_time" content="2020-10-19T02:18:08.000Z">
+<meta property="article:modified_time" content="2020-10-19T02:25:32.000Z">
 <meta property="article:author" content="Barry Wong">
 <meta name="twitter:card" content="summary">
   
@@ -159,14 +159,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-比较含退格的字符串" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      比较含退格的字符串
     </h1>
   
 
@@ -182,29 +182,48 @@
 	
 	<!--显示阅读次数完毕-->
         
-        <a href="/2020/09/28/hello-world/" class="archive-article-date">
-  	<time datetime="2020-09-28T14:05:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-28</time>
+        <a href="/2020/10/19/%E6%AF%94%E8%BE%83%E5%90%AB%E9%80%80%E6%A0%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
+  	<time datetime="2020-10-19T02:18:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <blockquote>
+<p>语言：C++</p>
+<p>IDE：Xcode</p>
+<p>问题来源：LeetCode</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/backspace-string-compare">https://leetcode-cn.com/problems/backspace-string-compare</a></p>
+</blockquote>
 <a id="more"></a>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>给定<code> S</code> 和<code> T</code> 两个字符串，当它们分别被输入到空白的文本编辑器后，判断二者是否相等，并返回结果。<code> #</code> 代表退格字符。</p>
+<p>注意：如果对空文本输入退格字符，文本继续为空。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：S = <span class="string">&quot;ab#c&quot;</span>, T = <span class="string">&quot;ad#c&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：S 和 T 都会变成 “ac”</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><strong>示例 2：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：S = <span class="string">&quot;ab##&quot;</span>, T = <span class="string">&quot;c#d#&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：S 和 T 都会变成 “”</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：S = <span class="string">&quot;a##c&quot;</span>, T = <span class="string">&quot;#a#c&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：S 和 T 都会变成 “c”</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>示例 4：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：S = <span class="string">&quot;a#c&quot;</span>, T = <span class="string">&quot;b&quot;</span></span><br><span class="line">输出：<span class="literal">false</span></span><br><span class="line">解释：S 会变成 “c”，但 T 仍然是 “b”</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">backspaceCompare</span><span class="params">(<span class="built_in">string</span> S, <span class="built_in">string</span> T)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">string</span>::iterator itr_begin_S = S.begin();</span><br><span class="line">        <span class="built_in">string</span>::iterator itr_end_S = S.end()<span class="number">-1</span>;</span><br><span class="line">        <span class="built_in">string</span>::iterator itr_begin_T = T.begin();</span><br><span class="line">        <span class="built_in">string</span>::iterator itr_end_T = T.end()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> time_S = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> time_T = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(*itr_begin_S == <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            S.erase(itr_begin_S);</span><br><span class="line">            --itr_end_S;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(*itr_begin_T == <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            T.erase(itr_begin_T);</span><br><span class="line">            --itr_end_T;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(itr_begin_S != itr_end_S)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(time_S != <span class="number">0</span> &amp;&amp; *itr_end_S != <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                --time_S;</span><br><span class="line">                S.erase(itr_end_S);</span><br><span class="line">                --itr_end_S;</span><br><span class="line">                <span class="keyword">if</span>(itr_begin_S == itr_end_S)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(itr_begin_S == itr_end_S)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>(*itr_end_S == <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                ++time_S;</span><br><span class="line">                S.erase(itr_end_S);</span><br><span class="line">                --itr_end_S;</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                --itr_end_S;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(itr_begin_T != itr_end_T)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(time_T != <span class="number">0</span> &amp;&amp; *itr_end_T != <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                --time_T;</span><br><span class="line">                T.erase(itr_end_T);</span><br><span class="line">                --itr_end_T;</span><br><span class="line">                <span class="keyword">if</span>(itr_begin_T == itr_end_T)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(itr_begin_T == itr_end_T)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>(*itr_end_T == <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                ++time_T;</span><br><span class="line">                T.erase(itr_end_T);</span><br><span class="line">                --itr_end_T;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                --itr_end_T;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(itr_begin_S == itr_end_S &amp;&amp; time_S != <span class="number">0</span>)</span><br><span class="line">            S.erase(itr_begin_S);</span><br><span class="line">        <span class="keyword">if</span>(itr_begin_T == itr_end_T &amp;&amp; time_T != <span class="number">0</span>)</span><br><span class="line">            T.erase(itr_begin_T);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(S == T)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -284,7 +303,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io//2020/09/28/hello-world/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io//2020/10/19/%E6%AF%94%E8%BE%83%E5%90%AB%E9%80%80%E6%A0%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -299,15 +318,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          配置yilia主题
-        
-      </div>
-    </a>
   
+    <a href="/2020/10/17/Ackerman%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ackerman函数实现</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -332,7 +347,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">问题描述</span></a></li></ol>
                     </div>
                 </span>
             </div>
