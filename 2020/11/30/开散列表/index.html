@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wyx-sjtu.github.io">
-  <title>Archives | Hexo</title>
+  <title>开散列表 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://wyx-sjtu.github.io/archives/page/2/index.html">
+  <meta name="description" content="语言：C++ IDE：Xcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开散列表">
+<meta property="og:url" content="https://wyx-sjtu.github.io/2020/11/30/%E5%BC%80%E6%95%A3%E5%88%97%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="语言：C++ IDE：Xcode">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-30T03:51:42.000Z">
+<meta property="article:modified_time" content="2020-11-30T03:53:16.000Z">
 <meta property="article:author" content="Barry Wong">
 <meta name="twitter:card" content="summary">
   
@@ -155,214 +159,187 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-开散列表" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      开散列表
+    </h1>
+  
+
+	<!--显示阅读次数-->
+	
+	  <br/>
+	  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+	  <span class="icon-sort"></span>
+	  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+	            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+	  </span>
+	  </a>
+	
+	<!--显示阅读次数完毕-->
+        
+        <a href="/2020/11/30/%E5%BC%80%E6%95%A3%E5%88%97%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2020-11-30T03:51:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-30</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>语言：C++</p>
+<p>IDE：Xcode</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">OpenSearchTable</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">        T data;</span><br><span class="line">        Node* pNext;</span><br><span class="line">        </span><br><span class="line">        Node(<span class="keyword">const</span> T&amp; x, Node* p = <span class="literal">nullptr</span>):data(x),pNext(p)&#123;&#125;</span><br><span class="line">        Node():pNext(<span class="literal">nullptr</span>)&#123;&#125;</span><br><span class="line">        ~Node()&#123;&#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    Node** <span class="built_in">array</span>;</span><br><span class="line">    <span class="keyword">int</span> length;</span><br><span class="line">    <span class="keyword">int</span> (*key)(<span class="keyword">const</span> T&amp; x);</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">defaultKey</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span></span>&#123;<span class="keyword">return</span> x;&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    OpenSearchTable(<span class="keyword">int</span> length, <span class="keyword">int</span> (*f)(<span class="keyword">const</span> T&amp; x) = defaultKey)&#123;</span><br><span class="line">        <span class="keyword">this</span>-&gt;length = length;</span><br><span class="line">        key = f;</span><br><span class="line">        <span class="built_in">array</span> = <span class="keyword">new</span> Node*[length];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; ++i)</span><br><span class="line">            <span class="built_in">array</span>[i] = <span class="literal">nullptr</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ~OpenSearchTable()&#123;</span><br><span class="line">        Node *q, *p;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            p = <span class="built_in">array</span>[i];</span><br><span class="line">            <span class="keyword">while</span>(p != <span class="literal">nullptr</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                q = p-&gt;pNext;</span><br><span class="line">                <span class="keyword">delete</span> p;</span><br><span class="line">                p = q;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">delete</span>[] <span class="built_in">array</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span></span>;</span><br><span class="line">    <span class="function">Node* <span class="title">find</span><span class="params">(<span class="keyword">const</span> T&amp; x)</span><span class="keyword">const</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">OpenSearchTable</span>&lt;T&gt;:</span>:insert(<span class="keyword">const</span> T &amp;x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> pos = key(x) % length;</span><br><span class="line">    Node* p = <span class="keyword">new</span> Node(x, <span class="built_in">array</span>[pos]);</span><br><span class="line">    <span class="built_in">array</span>[pos] = p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">OpenSearchTable</span>&lt;T&gt;:</span>:remove(<span class="keyword">const</span> T &amp;x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> pos = key(x) % length;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">array</span>[pos] == <span class="literal">nullptr</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    Node* loc = <span class="built_in">array</span>[pos];</span><br><span class="line">    <span class="keyword">if</span>(loc-&gt;data == x)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">array</span>[pos] = loc-&gt;pNext;</span><br><span class="line">        <span class="keyword">delete</span> loc;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(loc-&gt;pNext != <span class="literal">nullptr</span> &amp;&amp; !(loc-&gt;pNext-&gt;data == x))</span><br><span class="line">        loc = loc-&gt;pNext;</span><br><span class="line">    <span class="keyword">if</span>(loc-&gt;pNext != <span class="literal">nullptr</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        Node* temp = loc-&gt;pNext;</span><br><span class="line">        loc-&gt;pNext = temp-&gt;pNext;</span><br><span class="line">        <span class="keyword">delete</span> temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">typename</span> <span class="title">OpenSearchTable</span>&lt;T&gt;:</span>:Node* OpenSearchTable&lt;T&gt;::find(<span class="keyword">const</span> T &amp;x)<span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> pos = key(x) % length;</span><br><span class="line">    Node* p = <span class="built_in">array</span>[pos];</span><br><span class="line">    <span class="keyword">while</span>(p != <span class="literal">nullptr</span> &amp;&amp; !(p-&gt;data == x))</span><br><span class="line">        p = p-&gt;pNext;</span><br><span class="line">    <span class="keyword">if</span>(p == <span class="literal">nullptr</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2020-10-15T14:02:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/">数据结构-用栈实现简单的计算器</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io/ithub.io/2020/11/30/%E5%BC%80%E6%95%A3%E5%88%97%E8%A1%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A4%A7%E6%95%B4%E6%95%B0%E5%A4%84%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-10-06T01:40:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/30/%E7%B1%BB%E6%9C%AA%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">类未实例化出现的一个错误</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A4%A7%E6%95%B4%E6%95%B0%E5%A4%84%E7%90%86/">数据结构_大整数处理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/Cpp%E4%B8%ADString%E7%B1%BB%E7%94%A8%E6%B3%95%E5%B0%8F%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-10-05T10:44:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/Cpp%E4%B8%ADString%E7%B1%BB%E7%94%A8%E6%B3%95%E5%B0%8F%E7%BB%93/">Cpp中String类用法小结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/" class="archive-article-date">
-  	<time datetime="2020-09-30T13:05:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/">数据结构练习——栈</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-09-30T00:47:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/">Typora操作基础</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-09-30T00:11:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/">配置yilia主题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/28/hello-world/" class="archive-article-date">
-  	<time datetime="2020-09-28T14:05:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&amp;laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -386,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
