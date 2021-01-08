@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://wyx-sjtu.github.io">
   <title>Linux主机模式、桥接模式和NAT模式的区别 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux虚拟网络NAT: 虚机连接vnet8连接路由器连接物理网卡  就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。使用NAT模式可以实现在虚拟系统里访问互联网。简单讲就是宿主机器再构建一个局域网，然后，局域网内只有一台机器，就是虚拟机。NAT模式下的虚拟系统的TCP&#x2F;IP配置信息是由VMnet8(NAT)虚拟网络的DHCP服务器提供的，无法进行手工修改，因">
+  <meta name="description" content="环境：CentOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux主机模式、桥接模式和NAT模式的区别">
 <meta property="og:url" content="https://wyx-sjtu.github.io/2021/01/08/Linux%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F%E5%92%8CNAT%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Linux虚拟网络NAT: 虚机连接vnet8连接路由器连接物理网卡  就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。使用NAT模式可以实现在虚拟系统里访问互联网。简单讲就是宿主机器再构建一个局域网，然后，局域网内只有一台机器，就是虚拟机。NAT模式下的虚拟系统的TCP&#x2F;IP配置信息是由VMnet8(NAT)虚拟网络的DHCP服务器提供的，无法进行手工修改，因">
+<meta property="og:description" content="环境：CentOS">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-08T09:05:33.000Z">
-<meta property="article:modified_time" content="2021-01-08T09:14:52.000Z">
+<meta property="article:modified_time" content="2021-01-08T09:22:20.000Z">
 <meta property="article:author" content="Barry Wong">
 <meta name="twitter:card" content="summary">
   
@@ -66,7 +66,7 @@
 			</ul>
 		</nav>
                 <nav>
-                     总文章数 21
+                     总文章数 20
                 </nav>
 		<nav class="header-smart-menu">
     		
@@ -190,7 +190,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
+        <blockquote>
+<p>环境：CentOS</p>
+</blockquote>
+<a id="more"></a>
 
 <h1 id="Linux虚拟网络"><a href="#Linux虚拟网络" class="headerlink" title="Linux虚拟网络"></a>Linux虚拟网络</h1><h2 id="NAT"><a href="#NAT" class="headerlink" title="NAT:"></a>NAT:</h2><blockquote>
 <p>虚机连接vnet8连接路由器连接物理网卡</p>
