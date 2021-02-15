@@ -6,15 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wyx-sjtu.github.io">
-  <title>Archives: 2020 | Hexo</title>
+  <title>Miniconda安装TensorFlow并导入Pycharm | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://wyx-sjtu.github.io/archives/2020/page/2/index.html">
+  <meta name="description" content="安装环境：win10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Miniconda安装TensorFlow并导入Pycharm">
+<meta property="og:url" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安装环境：win10">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/1.png">
+<meta property="og:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/2.png">
+<meta property="og:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/3.png">
+<meta property="og:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/4.png">
+<meta property="og:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/5.png">
+<meta property="article:published_time" content="2021-02-15T02:43:19.000Z">
+<meta property="article:modified_time" content="2021-02-15T03:22:29.000Z">
 <meta property="article:author" content="Barry Wong">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wyx-sjtu.github.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,268 +165,229 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Miniconda安装TensorFlow并导入Pycharm" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Miniconda安装TensorFlow并导入Pycharm
+    </h1>
+  
+
+	<!--显示阅读次数-->
+	
+	  <br/>
+	  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+	  <span class="icon-sort"></span>
+	  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+	            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+	  </span>
+	  </a>
+	
+	<!--显示阅读次数完毕-->
+        
+        <a href="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/" class="archive-article-date">
+  	<time datetime="2021-02-15T02:43:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-15</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>安装环境：win10</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="安装Pycharm"><a href="#安装Pycharm" class="headerlink" title="安装Pycharm"></a>安装Pycharm</h2><p>直接在官网进行下载并安装。</p>
+<p>具体破解过程参考其他教程。</p>
+<h2 id="安装Miniconda"><a href="#安装Miniconda" class="headerlink" title="安装Miniconda"></a>安装Miniconda</h2><p>直接搜索Miniconda进行下载，安装时一直点击下一步即可。</p>
+<p>注意要记住安装目录。</p>
+<blockquote>
+<p>Miniconda体积较小，当然anaconda也可以，只不过体积较大。</p>
+</blockquote>
+<h2 id="用Miniconda配置python3环境"><a href="#用Miniconda配置python3环境" class="headerlink" title="用Miniconda配置python3环境"></a>用Miniconda配置python3环境</h2><ul>
+<li>点击左下角的开始，找到Anaconda Prompt（miniconda）(或者直接在搜索框搜索)</li>
+<li>点击Anaconda Prompt（miniconda），出现一个黑色的交互框</li>
+<li>输入<code>conda create --name tensorflow python3.8</code>创建一个名叫<code>tensorflow</code>的环境。<code>tensorflow</code>是一个目录，存储在miniconda安装目录中的<code>envs</code>目录中</li>
+<li>安装期间会跳出y/n的选项，直接敲y回车</li>
+<li>安装完成后，输入<code>conda activate tensorflow</code>进入该环境，以便在该目录下安装tensorflow等包</li>
+</ul>
+<h2 id="下载tensorflow等包"><a href="#下载tensorflow等包" class="headerlink" title="下载tensorflow等包"></a>下载tensorflow等包</h2><ul>
+<li><p>进入tensorflow后，交互窗口的交互行的最左边括号会显示tensorflow</p>
+<p><img src="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/1.png"></p>
+</li>
+<li><p>然后分别输入<code>conda install numpy</code>，<code>conda install pandas</code>, <code>conda install matplotlib</code>, <code>conda install tensorflow==2.3.0</code>进行下载安装</p>
+</li>
+<li><p>安装完成后，可以输入<code>conda list</code>查看一下当前环境下所拥有的包</p>
+<p><img src="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/2.png"></p>
+</li>
+</ul>
+<h2 id="将环境配置到Pycharm中"><a href="#将环境配置到Pycharm中" class="headerlink" title="将环境配置到Pycharm中"></a>将环境配置到Pycharm中</h2><ul>
+<li><p>打开Pycharm</p>
+</li>
+<li><p>点击File–Settings–Project:你的项目名称–Python Interpreter</p>
+</li>
+<li><p>点击Python Interpreter后面的设置，并选择Add…</p>
+<p><img src="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/3.png"></p>
+</li>
+<li><p>选择System Interpreter，然后添加在miniconda安装环境下envs目录中tensorflow目录中的python文件</p>
+<p><img src="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/4.png"></p>
+</li>
+<li><p>然后选择Virtualenv Environment，选择Existing environment，依旧选择python文件</p>
+<p><img src="/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/5.png"></p>
+</li>
+<li><p>在程序中输入：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>都未报错。</p>
+<p>大功告成！</p>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/17/Ackerman%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2020-10-16T23:46:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/17/Ackerman%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0/">Ackerman函数实现</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wyx-sjtu.github.io/ithub.io/2021/02/15/Miniconda%E5%AE%89%E8%A3%85TensorFlow%E5%B9%B6%E5%AF%BC%E5%85%A5Pycharm/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-10-16T12:23:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-16</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/08/Linux%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F%E5%92%8CNAT%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux主机模式、桥接模式和NAT模式的区别</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97/">数据结构-队列</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Pycharm"><span class="toc-number">1.</span> <span class="toc-text">安装Pycharm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Miniconda"><span class="toc-number">2.</span> <span class="toc-text">安装Miniconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8Miniconda%E9%85%8D%E7%BD%AEpython3%E7%8E%AF%E5%A2%83"><span class="toc-number">3.</span> <span class="toc-text">用Miniconda配置python3环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDtensorflow%E7%AD%89%E5%8C%85"><span class="toc-number">4.</span> <span class="toc-text">下载tensorflow等包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%88%B0Pycharm%E4%B8%AD"><span class="toc-number">5.</span> <span class="toc-text">将环境配置到Pycharm中</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2020-10-15T14:02:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-15</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/">数据结构-用栈实现简单的计算器</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A4%A7%E6%95%B4%E6%95%B0%E5%A4%84%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-10-06T01:40:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A4%A7%E6%95%B4%E6%95%B0%E5%A4%84%E7%90%86/">数据结构_大整数处理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/Cpp%E4%B8%ADString%E7%B1%BB%E7%94%A8%E6%B3%95%E5%B0%8F%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-10-05T10:44:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/Cpp%E4%B8%ADString%E7%B1%BB%E7%94%A8%E6%B3%95%E5%B0%8F%E7%BB%93/">Cpp中String类用法小结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/" class="archive-article-date">
-  	<time datetime="2020-09-30T13:05:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BB%83%E4%B9%A0%E2%80%94%E2%80%94%E6%A0%88/">数据结构练习——栈</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-09-30T00:47:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/Typora%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/">Typora操作基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-09-30T00:11:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/30/%E9%85%8D%E7%BD%AEyilia%E4%B8%BB%E9%A2%98/">配置yilia主题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/28/hello-world/" class="archive-article-date">
-  	<time datetime="2020-09-28T14:05:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -440,8 +411,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
